@@ -59,13 +59,13 @@ h2+h3 {
 }
 span > p{
     color:yellow;
-    text-align: center;
+    text-align: center; /* ger inlinelementet färgen gul*/
     
     
 }
 #a2:hover{
     text-decoration: none;
-    color: red;
+    color: red; /* om man hovrar över länkarna så blir de röda*/
 
 }
 #ul2{
@@ -81,17 +81,17 @@ span > p{
 
 }
 .tel p{
-    display:inline-block;
+    display:inline-block;/* gör att det blir horizientellt*/
     color: black;
 }
 
 .web p{
-    display:inline-block;
+    display:inline-block;/* gör att det blir hoizientellt*/
     color: white;
 }
 #span1{
-    display: inline-block;
-    text-align: center;
+    display: inline-block; /* gör att det blir hoizientellt*/
+    text-align: center; /* centrerar texten*/ 
 }
 
 #span2{
