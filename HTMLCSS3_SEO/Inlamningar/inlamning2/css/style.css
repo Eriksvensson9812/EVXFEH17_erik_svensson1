@@ -112,7 +112,7 @@ span > p{
 }
 
 .tel ~ .web{
-    color:white;
+    color:white; /* genereal sibling combinator med font färgen vit*/
 }
 
 
