@@ -111,3 +111,9 @@ span > p{
     margin-bottom: 0.5em;
 }
 
+.tel ~ .web{
+    color:white;
+}
+
+
+
