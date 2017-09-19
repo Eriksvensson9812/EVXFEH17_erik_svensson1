@@ -181,7 +181,7 @@ color:slateblue;
 nav ul li span{
     background-color: purple;
     padding: 5px;
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 3px;
     color:white;
 }
 
@@ -194,7 +194,7 @@ background-size: cover;
 .article1:hover{
     background-color:#140E32;
     opacity:0.3;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
 }
 
 
