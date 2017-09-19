@@ -1,0 +1,209 @@
+/* universal selector */
+*{
+    font-family: "Merriweather";
+    box-sizing: border-box; /* beräknar storleken på innehållet till en eventuell ram och tjockleken på ramen*/
+    padding: 0;
+    margin: 0; /* återställer varje webbläsares grundinstälnningar */
+}
+
+body{
+background-color: white;
+width:100%;
+max-width:50em; /* 50em är lika 800px */
+margin:0 auto; /* centrerar innehållet */ 
+}
+
+#header{
+    margin:0 auto;
+}
+ul{
+    list-style-type:none; /* tar bort punkterna från ul */
+  }
+
+  a:link {
+    text-decoration: none; /* tar bort understräck från alla länkar*/ 
+}
+
+#nav2{
+    padding:1em 2em; /*denna kod ger padding 1em ovan och nedan, 2em höger och vänster*/
+    background:#333;
+  }
+
+#nav2 li{
+    display:inline-block; /*gör listan horizontellt*/
+    margin-right:5em;
+    margin:1em;
+  }
+
+  
+
+nav a{
+    color: white; /*ändrar färgen på länkarna*/
+}
+
+h2+h3 {      
+    color:greenyellow /*Adjecent Sibling Selector där ex2 får färgen greenyellow*/
+}
+.article1{
+    margin: 0.1em;/*alla artiklar får en margin på 1*/
+}
+#rubrik{
+    padding:0.5em;
+    text-align: center; /*h3 med id=rubrik får en padding och centrerat innehåll*/
+    color:white;
+    font-size: 2em; /* 12px */
+    line-height: 1.5em; /* 18px */
+    margin: 1em;;
+}
+#ul1 li a{
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+.blog_summary > span{
+
+    color:yellow;
+    text-align: center; /* ger inlinelementet färgen gul*/
+}
+    
+    
+}
+#a2:hover{
+    text-decoration: none;
+    color: red; /* om man hovrar över länkarna så blir de röda*/
+
+}
+#ul2{
+   text-align: center;
+}
+#ul1{
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 0.5em;
+
+}
+.tel p{
+    display:inline-block;/* gör att det blir horizientellt*/
+    color: black;
+}
+
+.web p{
+    display:inline-block;/* gör att det blir hoizientellt*/
+    color: white;
+}
+#span1{
+    display: inline-block; /* gör att det blir hoizientellt*/
+    text-align: center; /* centrerar texten*/ 
+}
+
+#span2{
+    display: inline-block;
+    text-align: center;
+}
+
+.blog_summary{
+    text-align: center;
+}
+#p1{
+    color:whitesmoke
+}
+
+.div1{
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.tel ~ .web{
+    color:white; /* genereal sibling combinator med font färgen vit*/
+}
+
+#nav1 {
+	height:40px;
+	width:800px;
+	display:block;
+	margin:0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+#nav1 a{
+	display:block;
+	text-decoration: none;
+	font-family: merriweather;
+	font-weight: bold;
+	font-size:10pt;
+	color: white;
+}
+#nav1 a:hover{
+    background:white;
+    color:black;
+}
+#nav1 ul{
+  list-style: none;
+  opacity:0.9;
+}
+#nav1 ul li{
+	float:left;
+	width:157px;
+	height:40px;
+	line-height: 40px;
+	background: black;
+    margin-right:3px;
+}
+#nav1 ul ul li{
+	position:relative; 
+    display:none;
+}
+#nav1 ul ul ul{
+	display:none;
+}
+#nav1 ul li:hover ul li{
+	display: block;
+  
+}
+#nav1 ul ul li:hover ul{
+	display:block;
+	position:absolute; 
+	width:150px;
+	left:150px;
+	top:0px; 
+}
+#nav1 ul ul li:nth-last-child(1){
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+a:nth-of-type(3n+2) #rubrik{
+color:slateblue;
+}
+
+nav ul li span{
+    background-color: purple;
+    padding: 5px;
+    border-radius: 3px 3px 3px 3px;
+    color:white;
+}
+
+body{
+	background: url(bild4.jpg) no-repeat;
+    background-size: auto auto;
+background-size: cover;
+}
+
+.article1:hover{
+    background-color:#140E32;
+    opacity:0.3;
+    border-radius: 15px 15px 15px 15px;
+}
+
+
+
+#nav1 #ul1 li {
+    float:left;
+	width:157px;
+	height:40px;
+	line-height: 20px;
+	background: black;
+    margin-right:3px;
+}
