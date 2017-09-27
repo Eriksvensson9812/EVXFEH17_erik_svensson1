@@ -174,9 +174,6 @@ h2+h3 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-a:nth-of-type(3n+2) #rubrik{
-color:slateblue;
-}
 
 nav ul li span{
     background-color: purple;
@@ -199,11 +196,24 @@ background-size: cover;
 
 
 
-#nav1 #ul1 li {
-    float:left;
+#nav1 ul li {
 	width:157px;
 	height:40px;
 	line-height: 20px;
 	background: black;
     margin-right:3px;
+    display:flex;
 }
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section a{
+    width: 50%;
+  }
+  section > a:last-of-type{
+    width: 100%;
+  }
+
+
