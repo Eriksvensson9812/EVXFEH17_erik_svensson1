@@ -39,6 +39,13 @@ nav ul ul ul{
 	display:none;
   
 }
+ul{
+  list-style-type:none; /* tar bort punkterna från ul */
+}
+
+a:link {
+  text-decoration: none; /* tar bort understräck från alla länkar*/ 
+}
 
 /*Visar dropdown vid hover på ul li*/
 nav ul li:hover ul li{
@@ -88,8 +95,67 @@ nav ul li ul li a{
 nav ul ul li ul a{
   color:white;
 }
+/*tilläpar klassen flexcards flexbox*/
+.flexcards{
+  margin:0.5em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+#article1{
+  background-color: green;/*ger första artikeln en bakgrundsfärg*/
+}
+#article2{
+  background-color: blue;/*ger andra artikeln en bakgrundsfärg*/
+}
+#article3{
+  background-color:orange;/*ger tredje artikeln en bakgrundsfärg*/
+}
+.flexcards header{
+  color:white;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.5em;
+}
+p{
+  color:white;
+  padding: 0.5em;
+  margin: 0.5em;
 
-@media all and (min-width: 630px){
+}
+.flexcards footer{
+  background-color: black;
+  margin: 0.5em;
+  padding: 0.5em;
+  
+
+}
+.flexcard1{
+  font-size: 120%;
+  font-weight: 700;
+  flex: 1 100%;
+}
+.thearticle{
+  display: flex;
+  font-size: 120%;
+  font-weight: 700;
+  flex: 1;
+  justify-content: space-between;
+}
+img{
+  width: 100%;
+}
+.flexcards img{
+  padding:0.5em;
+}
+.flexcards footer div{
+  text-align: center;
+  color:white;
+
+}
+
+
+@media all and (min-width: 816px){
 /*Tecknet för mobil menyn döljs på desktop*/
   label{
     display:none;
@@ -171,64 +237,6 @@ section a{
 section > a:last-of-type{
   width: 100%;
 }
-.article1, .article2{
-  color:white;
-  padding:0.5em;
- margin:0.5em;
-}
-.article3{
-  color:white;
-  padding:0.5em;
-  margin:0.5em;
-}
-h3{
-  color:white;
-}
-ul{
-  list-style-type:none; /* tar bort punkterna från ul */
-}
-
-a:link {
-  text-decoration: none; /* tar bort understräck från alla länkar*/ 
-}
-.article1{
-  background:green;
-}
-.article2{
-  background:lightblue;
-}
-.article3{
-  background:orange;
-}
-#Flexcard1{
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-#flexcard1{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
-}
-.article1{
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-img{
-  padding:0.5em;
-  margin:0 auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-.footer1{
-  background:purple;
-  margin-top: 0.5em;
-  text-align: center;
-}
-.article:nth-child(2) p{
-  justify-content: flex-end
 }
 
 
