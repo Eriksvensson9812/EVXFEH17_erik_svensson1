@@ -1,0 +1,299 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	background: whitesmoke;
+}
+ul{
+    list-style-type:none; /* tar bort punkterna från ul */
+  }
+  
+  a:link {
+    text-decoration: none; /* tar bort understräck från alla länkar*/ 
+  }
+/*tilläpar klassen flexcards flexbox*/
+.flexcards{
+    margin:0.5em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  #article1{
+    background-color: green;/*ger första artikeln en bakgrundsfärg*/
+  }
+  #article2{
+    background-color: blue;/*ger andra artikeln en bakgrundsfärg*/
+  }
+  #article3{
+    background-color:orange;/*ger tredje artikeln en bakgrundsfärg*/
+  }
+  .flexcards header{/* ger flexcards rubrik färgen vit och display flex*/
+    color:white;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em;
+  }
+  .flexcards p{
+    color:white;
+    padding: 0.5em;
+    margin: 0.5em;
+  
+  }
+  .flexcards footer{
+    background-color: black;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  label{ /*visas enbart på mobilen*/
+    color:black;
+    line-height: 40px;
+    font-size:2em;
+    cursor:pointer;
+  }
+  #nav-toggle { /*en dold checkbox som inte visas*/
+    display: none;
+  }
+  #nav-toggle:checked + .header1 nav { /*Används för att gömma menyn på mobilen*/
+    display: block;
+  }
+  nav {
+    display: none;
+  }	
+
+  .flexcard1{ /*ger klassen flexcard1 en font-size och weight*/
+    font-size: 120%;
+    font-weight: 700;
+    flex: 1 100%;
+  }
+  .thearticle{ /*ger klassen thearticle display flex och ändrar fonten på den*/
+    display: flex;
+    font-size: 120%;
+    font-weight: 700;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .flexcards .fa{
+    font-size:1em; 
+  } 
+  img{
+    width: 100%;
+  }
+  .flexcards img{
+    padding:0.5em;
+  }
+  .flexcards footer div{
+    text-align: center;
+    color:white;
+  }
+  .header1, .container{
+      display: flex;
+  }
+  .container{
+      flex-flow: column wrap;
+  }
+  .box{
+      flex:1;
+  }
+  .box1{
+      background-color: rgba(97, 95, 95, 0.98);  
+      margin-bottom: 3.8%; 
+      padding:0.5em;
+  }
+  .box1 div{
+    padding:0.5em;
+    margin:0.5em;
+  }
+  .box2{
+      flex:3;
+      order:-1;
+  }
+  .box1 header{
+      color:whitesmoke;
+      
+  }
+  .baseline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+.baseline p{
+  padding:0.5em;
+  margin:0.5em;
+  color:black;
+}
+.heading_baseline{
+    display: flex;
+    align-items: baseline;
+    padding:0.5em;
+    margin:0.5em;
+}
+.flex_container1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  justify-content: flex-end;
+  padding:0.5em;
+}
+.flex_container1 div{
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.flex_container1 h1{
+  padding:0.5em;
+}
+.header_div{
+  flex: 1 100%;
+  padding:0.5em;
+  }
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.one {
+  background-color: green;
+  padding:1em;
+}
+.two {
+  background-color: lightcoral;
+  padding:1em;
+}
+.three {
+  background-color: lightgreen;
+  padding:1em;
+}
+.four {
+  background-color: blue;
+  padding:1em;
+}
+.five {
+  background-color: purple;
+  padding:1em;
+  
+}
+.div_li{
+  background-color: orange;
+  padding:1em;
+}
+.one a{
+  padding:1em;
+  margin-top:1em;
+}
+nav ul{
+	flex-flow: column wrap;
+	list-style: none;
+	text-align: center;
+}
+.fa-diamond,
+.fa-graduation-cap,
+.fa-facebook-square,
+.fa-instagram,
+.fa-youtube-square{
+  padding-right:0.5em;/*ger fonterna padding*/
+}
+.fa-wikipedia-w,
+.fa-steam-square,
+.fa-spotify,
+.fa-snapchat,
+.fa-slack{
+  padding-right: 0.5em;/*ger fonterna padding och färgen svart*/
+  color:black;
+}
+.fa-apple,
+.fa-bluetooth,
+.fa-codepen,
+.fa-chrome,{
+  padding-right: 1em;/*ger fonterna padding*/
+}
+.flex_container1 .fa{/*ger alla fonter inom klassen flex_container1 en fontsize*/
+  padding:1em; 
+  font-size:2.5em; 
+
+}
+.header_div .fa{/* ger alla fonter inom klassen header_div en fontsize*/
+  font-size: 1.5em;
+}
+.logo{/*gör så att klassen logo lägger sig baseline, lyckades dock inte riktigt med detta och vet inte varför*/
+  display: flex;
+  align-items: baseline;
+}
+
+
+  @media all and (min-width: 816px){/*brytpunkten för desktoppen*/
+label{/*gör så att label göms på desktoppen*/
+  display:none;
+}
+nav {
+  display: block;
+}	
+
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box2 a{ /*gör så att artiklarna 1 och 2 läggs sig bredvid varandra*/
+    width: 50%;
+}
+.box2 > a:last-of-type{/*gör så att den sista aritkeln lägger sig under och tar upp hela sidans bredd*/
+    width: 100%;
+}
+		
+.container{
+	flex-flow: row wrap;
+}	
+nav ul {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+nav li a{
+    padding: 0.5em;
+    margin: 0.5em;
+   text-align: center;
+}
+.div_li{ /*gör så att sökrutan lägger sig längt till höger på desktoppen*/
+    order:1
+}
+.box1{/* gör så att klassen box 1 lägger sig till vänster på desktoppen*/
+  order:-1;
+}
+.one {/* ger klassen one rundade kanter och padding*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+}
+.two {/* ger klassen two rundade kanter och padding*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+}
+.three {/* ger klassen three rundade kanter och padding*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+}
+.four {/* ger klassen four rundade kanter och padding*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+}
+.five {/* ger klassen five rundade kanter och padding*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+  
+}
+.div_li{/*ger sökrutan rundade kanter*/
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  padding:1em;
+}
+}  
