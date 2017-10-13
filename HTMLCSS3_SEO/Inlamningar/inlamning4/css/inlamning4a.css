@@ -13,7 +13,7 @@ background-size: cover;
 
 /*Visas enbart på mobilen*/
 label{
-  color:white;
+  color:black;
   line-height: 40px;
   font-size:2em;
   cursor:pointer;
